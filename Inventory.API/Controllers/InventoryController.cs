@@ -12,7 +12,7 @@ namespace Inventory.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class InventoryController : ControllerBase
     {
         [HttpGet]
         [Route("books")]
