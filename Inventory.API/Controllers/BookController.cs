@@ -36,7 +36,7 @@ namespace Inventory.API.Controllers
                 {
                     Name = "Fahrenheit 451",
                     Description = @"Yazılmış en iyi bilimkurgu romanı. İlk okuduğumda, yarattığı dünyayla kâbuslar görmeme sebep olmuştu. -Margaret Atwood
-                                    Öyle bir eser ki, hakkında ne söylesem eksik kalır. -Neil Gaiman",
+                                    Öyle bir eser ki, hakkında ne söylesem eksik kalır. - Neil Gaiman",
                     AvailableStock  = 29,
                     Id = 1,
                     Price = 18
