@@ -1,0 +1,54 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmqeventbus
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  ocelotapigateway:
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: OcelotApiGateway/Dockerfile
+    container_name: apigateway
+    ports:
+      - "5510:80"
+
+  billing.api:
+    image: ${DOCKER_REGISTRY-}billingapi
+    build:
+      context: .
+      dockerfile: Billing.API/Dockerfile
+    container_name: billingapi
+    ports:
+      - "5520:80"
+
+  inventory.api:
+    image: ${DOCKER_REGISTRY-}inventoryapi
+    build:
+      context: .
+      dockerfile: Inventory.API/Dockerfile
+    container_name: inventoryapi
+    ports:
+      - "5530:80"
+
+  registration.api:
+    image: ${DOCKER_REGISTRY-}registrationapi
+    build:
+      context: .
+      dockerfile: Registration.API/Dockerfile
+    container_name: registrationapi
+    ports:
+      - "5540:80"
+
+  shipment.api:
+    image: ${DOCKER_REGISTRY-}shipmentapi
+    build:
+      context: .
+      dockerfile: Rental.API/Dockerfile
+    container_name: shipmentapi
+    ports:
+      - "5550:80"
