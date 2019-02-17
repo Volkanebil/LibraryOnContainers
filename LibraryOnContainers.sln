@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{80525899-A748-4BB7-A332-F8554D65094E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rental.API", "Rental.API\Rental.API.csproj", "{0E494173-F1B1-497B-AA96-EA1864A380FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipment.API", "Rental.API\Shipment.API.csproj", "{0E494173-F1B1-497B-AA96-EA1864A380FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.API", "Billing.API\Billing.API.csproj", "{D712F31B-525B-4387-8724-3ED166CB50C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billing.API", "Billing.API\Billing.API.csproj", "{D712F31B-525B-4387-8724-3ED166CB50C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.API", "Registration.API\Registration.API.csproj", "{DC64477E-EB3D-4B74-8789-C31DBF86B409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.API", "Registration.API\Registration.API.csproj", "{DC64477E-EB3D-4B74-8789-C31DBF86B409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.API", "Inventory.API\Inventory.API.csproj", "{E39F6898-83F1-46E9-851D-B9B22386FACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.API", "Inventory.API\Inventory.API.csproj", "{E39F6898-83F1-46E9-851D-B9B22386FACD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{C8F1A385-7756-46B6-87A3-3C323C834FC1}"
 EndProject
@@ -19,17 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory", "Inventory", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Registration", "Registration", "{AC7DE692-0DDE-4EE3-ABC2-45C4E7E7156B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rental", "Rental", "{367A6E61-78C6-4399-8EDA-82550A5E7A92}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shipment", "Shipment", "{367A6E61-78C6-4399-8EDA-82550A5E7A92}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{5B33A103-8117-4679-9A61-69AA411E6057}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{89873033-82D2-4908-BC82-17A7A2DFD980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGateway", "OcelotApiGateway\OcelotApiGateway.csproj", "{CE7A9093-23A6-4125-B3F3-2A532EDA2EAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "OcelotApiGateway\OcelotApiGateway.csproj", "{CE7A9093-23A6-4125-B3F3-2A532EDA2EAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web.Bff.Library", "Web.Bff.Library", "{CEDC76D0-E565-4352-90D4-F77C3B8E6203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Library.HttpAggregator", "Web.Library.HttpAggregator\Web.Library.HttpAggregator.csproj", "{D37CD77A-6073-4477-87E4-171F77914ABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Library.HttpAggregator", "Web.Library.HttpAggregator\Web.Library.HttpAggregator.csproj", "{D37CD77A-6073-4477-87E4-171F77914ABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bus", "Bus", "{F541DEA9-F106-49E5-9135-A117742735DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "EventBus\EventBus.csproj", "{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,10 @@ Global
 		{D37CD77A-6073-4477-87E4-171F77914ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D37CD77A-6073-4477-87E4-171F77914ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D37CD77A-6073-4477-87E4-171F77914ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{CE7A9093-23A6-4125-B3F3-2A532EDA2EAA} = {89873033-82D2-4908-BC82-17A7A2DFD980}
 		{CEDC76D0-E565-4352-90D4-F77C3B8E6203} = {5B33A103-8117-4679-9A61-69AA411E6057}
 		{D37CD77A-6073-4477-87E4-171F77914ABE} = {CEDC76D0-E565-4352-90D4-F77C3B8E6203}
+		{AE5D8F71-44BC-4A15-A294-F8C19CA1F8C7} = {F541DEA9-F106-49E5-9135-A117742735DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73CBC6EA-BA6F-4A5A-AE9D-C94BA08DED59}

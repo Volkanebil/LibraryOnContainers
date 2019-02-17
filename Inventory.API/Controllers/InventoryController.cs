@@ -19,7 +19,7 @@ namespace Inventory.API.Controllers
         [ProducesResponseType(typeof(PaginatedItemsViewModel<Book>), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(IEnumerable<Book>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        private async Task<IActionResult> BooksAsync([FromQuery] int pageSize = 10, [FromQuery]int pageIndex = 0, string ids = null)
+        public async Task<IActionResult> BooksAsync([FromQuery] int pageSize = 10, [FromQuery]int pageIndex = 0, string ids = null)
         {
             var books = await GetBooksAsync();
 
